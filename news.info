@@ -42,3 +42,4 @@ features_exclude[dependencies][image] = image
 features_exclude[dependencies][menu] = menu
 features_exclude[dependencies][strongarm] = strongarm
 features_exclude[dependencies][taxonomy] = taxonomy
+github = https://raw.github.com/ISUITC/news/master/news.info
