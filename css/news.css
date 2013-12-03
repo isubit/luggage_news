@@ -1,0 +1,33 @@
+.view-id-news td {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px;
+    padding: 5px;
+}
+.views-label.views-label-term-node-tid.news-terms {
+    background-color: #D5D0C2;
+    border-radius: 4px 4px 0px 0px;
+    min-width: 200px;
+    padding: 3px;
+}
+.view-id-news td {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px;
+    padding: 5px;
+}
+.view.view-news.view-id-news.view-display-id-page.view-dom-id-190079887bbc7e77b645b0d83eced1b5 {
+    border-bottom: 0 none !important;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #9D9D9D;
+    padding-top: 5px;
+}
+
+.views-field.views-field-field-news-images {
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    width: 220px;
+}
