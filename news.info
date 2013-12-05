@@ -12,7 +12,6 @@ dependencies[] = global_roles
 dependencies[] = image
 dependencies[] = menu
 dependencies[] = node
-dependencies[] = people
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
