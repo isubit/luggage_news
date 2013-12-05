@@ -22,7 +22,7 @@ function news_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'News';
+  $handler->display->display_options['title'] = 'Microbiology News';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -61,6 +61,60 @@ function news_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Image(s) */
+  $handler->display->display_options['fields']['field_news_images']['id'] = 'field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['table'] = 'field_data_field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['field'] = 'field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['label'] = '';
+  $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_images']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: All taxonomy terms */
+  $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['label'] = 'Related News';
+  $handler->display->display_options['fields']['term_node_tid']['element_type'] = 'div';
+  $handler->display->display_options['fields']['term_node_tid']['element_class'] = 'news-term-label';
+  $handler->display->display_options['fields']['term_node_tid']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['term_node_tid']['element_label_class'] = 'news-terms';
+  $handler->display->display_options['fields']['term_node_tid']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['term_node_tid']['type'] = 'ol';
+  $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
+    'keywords' => 0,
+    'people_category' => 0,
+  );
   $handler->display->display_options['path'] = 'news';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'News';

@@ -26,7 +26,7 @@ function news_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about-us:node/add',
+    'parent_identifier' => 'main-menu_about-us:node/1',
   );
   // Translatables
   // Included for use with string extractors like potx.
