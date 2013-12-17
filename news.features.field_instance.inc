@@ -180,10 +180,10 @@ function news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -215,8 +215,8 @@ function news_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
-        'input_format' => 'j M Y - g:i:sa',
-        'input_format_custom' => '',
+        'input_format' => 'custom',
+        'input_format_custom' => 'm/d/y',
         'label_position' => 'above',
         'text_parts' => array(),
         'year_range' => '-3:+3',
@@ -235,7 +235,7 @@ function news_field_default_field_instances() {
 Baseball, bat, glove, ...',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
