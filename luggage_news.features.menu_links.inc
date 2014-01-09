@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * news.features.menu_links.inc
+ * luggage_news.features.menu_links.inc
  */
 
 /**
  * Implements hook_menu_default_menu_links().
  */
-function news_menu_default_menu_links() {
+function luggage_news_menu_default_menu_links() {
   $menu_links = array();
 
   // Exported menu link: main-menu_news:news

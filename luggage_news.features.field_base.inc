@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * news.features.field_base.inc
+ * luggage_news.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function news_field_default_field_bases() {
+function luggage_news_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_news_files'
