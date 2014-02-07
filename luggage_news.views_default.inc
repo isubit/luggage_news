@@ -1,4 +1,4 @@
-d<?php
+<?php
 /**
  * @file
  * luggage_news.views_default.inc
