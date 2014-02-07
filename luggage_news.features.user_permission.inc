@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * news.features.user_permission.inc
+ * luggage_news.features.user_permission.inc
  */
 
 /**
