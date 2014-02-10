@@ -173,59 +173,6 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_when'
-  $field_instances['node-news-field_news_when'] = array(
-    'bundle' => 'news',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'short',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_news_when',
-    'label' => 'When',
-    'required' => 0,
-    'settings' => array(
-      'default_value' => 'blank',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'custom',
-        'input_format_custom' => 'm/d/y',
-        'label_position' => 'above',
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_text',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-news-field_tags'
   $field_instances['node-news-field_tags'] = array(
     'bundle' => 'news',
@@ -275,7 +222,6 @@ Baseball, bat, glove, ...');
   t('File(s)');
   t('Image(s)');
   t('Tags');
-  t('When');
 
   return $field_instances;
 }

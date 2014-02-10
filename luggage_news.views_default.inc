@@ -22,7 +22,7 @@ function luggage_news_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Recent News';
+  $handler->display->display_options['title'] = 'News';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'All News';
@@ -132,8 +132,8 @@ function luggage_news_views_default_views() {
     'page' => 'page',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: Recent News Block */
+  $handler = $view->new_display('block', 'Recent News Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -145,6 +145,8 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['block_description'] = 'Recent News';
+  $export['news'] = $view;
 
   return $export;
 }
