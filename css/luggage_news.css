@@ -77,10 +77,12 @@
   padding: .4em;
 }
 
-#block-views-news-block .views-row {
+#block-views-news-block .views-row,
+.view-display-id-page .views-row {
   padding: .8em;
 }
 
-#block-views-news-block .views-row-odd {
+#block-views-news-block .views-row-odd,
+.view-display-id-page .views-row-odd {
   background-color: rgba(0,0,0,0.1);
 }
