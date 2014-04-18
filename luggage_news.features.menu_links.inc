@@ -24,7 +24,7 @@ function luggage_news_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => 4,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about-us:node/1',
   );
