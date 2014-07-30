@@ -70,19 +70,19 @@
   width: 220px;
 }
 
-#block-views-news-block {
-  border: #D3D3D3;
-  border-style: solid;
-  border-width: .1em;
-  padding: .4em;
-}
+/*#block-views-news-block {*/
+  /*border: #D3D3D3;*/
+  /*border-style: solid;*/
+  /*border-width: .1em;*/
+  /*padding: .4em;*/
+/*}*/
 
-#block-views-news-block .views-row,
-.view-display-id-page .views-row {
-  padding: .8em;
-}
+/*#block-views-news-block .views-row,*/
+/*.view-display-id-page .views-row {*/
+  /*padding: .8em;*/
+/*}*/
 
-#block-views-news-block .views-row-odd,
-.view-display-id-page .views-row-odd {
-  background-color: rgba(0,0,0,0.1);
-}
+/*#block-views-news-block .views-row-odd,*/
+/*.view-display-id-page .views-row-odd {*/
+  /*background-color: rgba(0,0,0,0.1);*/
+/*}*/
