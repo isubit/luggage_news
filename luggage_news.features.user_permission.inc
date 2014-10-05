@@ -14,6 +14,7 @@ function luggage_news_user_default_permissions() {
   $permissions['create news content'] = array(
     'name' => 'create news content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
@@ -24,7 +25,6 @@ function luggage_news_user_default_permissions() {
   $permissions['delete any news content'] = array(
     'name' => 'delete any news content',
     'roles' => array(
-      'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
     'module' => 'node',
@@ -33,7 +33,9 @@ function luggage_news_user_default_permissions() {
   // Exported permission: 'delete own news content'.
   $permissions['delete own news content'] = array(
     'name' => 'delete own news content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -50,7 +52,9 @@ function luggage_news_user_default_permissions() {
   // Exported permission: 'edit own news content'.
   $permissions['edit own news content'] = array(
     'name' => 'edit own news content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
