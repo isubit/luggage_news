@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_news_solr feature.
+ */
+
+include_once 'luggage_news_solr.features.inc';
