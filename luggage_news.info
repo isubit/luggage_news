@@ -33,4 +33,4 @@ features[variable][] = node_preview_news
 features[variable][] = node_submitted_news
 features[views_view][] = news
 features_exclude[dependencies][flexslider_fields] = flexslider_fields
-github = https://raw.github.com/ISUITC/luggage_news/master/luggage_news.info
+github = https://raw.github.com/isubit/luggage_news/master/luggage_news.info
