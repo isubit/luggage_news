@@ -10,3 +10,13 @@ function luggage_news_enable() {
     ->condition('name', 'luggage_news')
     ->execute();
 }
+
+/**
+ * Update news node description.
+ */
+function luggage_news_update_7300() {
+  db_update('node_type')
+    ->fields(array('description' => 'Newly received or noteworthy information, especially about recent or important events.'))
+    ->condition('module', 'luggage_news')
+    ->execute();
+}
