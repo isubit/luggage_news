@@ -16,7 +16,6 @@ function luggage_news_user_default_permissions() {
     'roles' => array(
       'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -24,9 +23,7 @@ function luggage_news_user_default_permissions() {
   // Exported permission: 'delete any news content'.
   $permissions['delete any news content'] = array(
     'name' => 'delete any news content',
-    'roles' => array(
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -44,7 +41,6 @@ function luggage_news_user_default_permissions() {
     'name' => 'edit any news content',
     'roles' => array(
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
