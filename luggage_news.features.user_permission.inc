@@ -23,7 +23,9 @@ function luggage_news_user_default_permissions() {
   // Exported permission: 'delete any news content'.
   $permissions['delete any news content'] = array(
     'name' => 'delete any news content',
-    'roles' => array(),
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
     'module' => 'node',
   );
 
@@ -34,6 +36,15 @@ function luggage_news_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in news_type'.
+  $permissions['delete terms in news_type'] = array(
+    'name' => 'delete terms in news_type',
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit any news content'.
@@ -52,6 +63,15 @@ function luggage_news_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in news_type'.
+  $permissions['edit terms in news_type'] = array(
+    'name' => 'edit terms in news_type',
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
+    'module' => 'taxonomy',
   );
 
   return $permissions;
