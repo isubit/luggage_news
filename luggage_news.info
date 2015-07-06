@@ -1,5 +1,5 @@
 name = luggage_news
-description = Newly received or noteworthy information, esp. about recent or important events.
+description = Newly received or noteworthy information, especially about recent or important events.
 core = 7.x
 package = Luggage
 version = 7.x-3.2
