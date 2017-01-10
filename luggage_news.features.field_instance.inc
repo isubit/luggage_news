@@ -141,7 +141,7 @@ function luggage_news_field_default_field_instances() {
     'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'An alternate URL can be used when your news item should redirect to content on another website. Add the URL to this field.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -207,7 +207,7 @@ function luggage_news_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -426,7 +426,7 @@ function luggage_news_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -498,6 +498,7 @@ Baseball, bat, glove, ...',
   t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
 Baseball, bat, glove, ...');
   t('Alternate URL');
+  t('An alternate URL can be used when your news item should redirect to content on another website. Add the URL to this field.');
   t('Body');
   t('Category');
   t('File(s)');

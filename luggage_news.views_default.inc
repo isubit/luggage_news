@@ -75,6 +75,7 @@ function luggage_news_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'node clearfix';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -121,6 +122,7 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['path'] = '[field_news_alternate_url]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Body */
@@ -131,36 +133,39 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_class'] = 'field field-name-body field-type-text-with-summary field-label-hidden';
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_plain';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '300',
   );
-  /* Field: Content: All taxonomy terms */
-  $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
-  $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
-  $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
-  $handler->display->display_options['fields']['term_node_tid']['label'] = '';
-  $handler->display->display_options['fields']['term_node_tid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['term_node_tid']['element_type'] = 'div';
-  $handler->display->display_options['fields']['term_node_tid']['element_class'] = 'news-term-label';
-  $handler->display->display_options['fields']['term_node_tid']['element_label_type'] = 'div';
-  $handler->display->display_options['fields']['term_node_tid']['element_label_class'] = 'news-terms';
-  $handler->display->display_options['fields']['term_node_tid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['term_node_tid']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['term_node_tid']['type'] = 'ol';
-  $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
-    'category' => 0,
-    'people_category' => 0,
-    'tags' => 0,
-    'announcement_type' => 0,
-    'expertise' => 0,
-    'event_type' => 0,
-    'keywords' => 0,
-    'meta_keywords' => 0,
-    'news_type' => 0,
-    'project_type' => 0,
-    'resource_category' => 0,
-  );
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
+  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_category']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_category']['element_label_class'] = 'field-label';
+  $handler->display->display_options['fields']['field_category']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_category']['element_wrapper_class'] = 'field field-name-field-category field-type-taxonomy-term-reference field-label-inline clearfix';
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_category']['field_api_classes'] = TRUE;
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['field_tags']['id'] = 'field_tags';
+  $handler->display->display_options['fields']['field_tags']['table'] = 'field_data_field_tags';
+  $handler->display->display_options['fields']['field_tags']['field'] = 'field_tags';
+  $handler->display->display_options['fields']['field_tags']['alter']['nl2br'] = TRUE;
+  $handler->display->display_options['fields']['field_tags']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_tags']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_tags']['element_label_class'] = 'field-label';
+  $handler->display->display_options['fields']['field_tags']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_tags']['element_wrapper_class'] = 'field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix';
+  $handler->display->display_options['fields']['field_tags']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_tags']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_tags']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_tags']['field_api_classes'] = TRUE;
   $handler->display->display_options['path'] = 'news';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'News';
@@ -243,7 +248,6 @@ function luggage_news_views_default_views() {
     'trim_length' => '600',
   );
   $handler->display->display_options['block_description'] = 'Recent News';
-
   $export['news'] = $view;
 
   return $export;

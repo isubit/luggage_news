@@ -137,7 +137,6 @@ function luggage_news_strongarm() {
     'token' => 0,
     'revision' => 0,
   );
-  
   $export['read_more_news_view_modes'] = $strongarm;
 
   return $export;
