@@ -57,6 +57,9 @@
   margin-bottom: 0.5rem;
   max-width: 120px;
 }
+.views-field.views-field-field-news-images img {
+  max-width: 100%;
+}
 
 /*#block-views-news-block {*/
   /*border: #D3D3D3;*/
