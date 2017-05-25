@@ -52,12 +52,10 @@
   padding: 5px;
 }
 .views-field.views-field-field-news-images {
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 0 2px;
   float: left;
-  margin-right: 20px;
-  padding: 10px;
-  width: 220px;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 120px;
 }
 
 /*#block-views-news-block {*/
