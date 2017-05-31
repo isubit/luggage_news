@@ -106,11 +106,13 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['field_news_images']['label'] = '';
   $handler->display->display_options['fields']['field_news_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_images']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_images']['settings'] = array(
     'image_style' => 'medium',
     'image_link' => 'content',
   );
+  $handler->display->display_options['fields']['field_news_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -235,6 +237,20 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Image(s) */
+  $handler->display->display_options['fields']['field_news_images']['id'] = 'field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['table'] = 'field_data_field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['field'] = 'field_news_images';
+  $handler->display->display_options['fields']['field_news_images']['label'] = '';
+  $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_images']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_images']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_news_images']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
