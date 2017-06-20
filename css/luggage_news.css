@@ -59,6 +59,7 @@
 }
 .views-field.views-field-field-news-images img {
   max-width: 100%;
+  height: auto;
 }
 
 /*#block-views-news-block {*/
