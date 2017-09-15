@@ -28,7 +28,7 @@ function luggage_news_node_info() {
     'news' => array(
       'name' => t('News'),
       'base' => 'node_content',
-      'description' => t('Newly received or noteworthy information, especially about recent or important events.'),
+      'description' => t('Post about recent and important information in chronological order.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
