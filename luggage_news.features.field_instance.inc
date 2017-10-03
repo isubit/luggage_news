@@ -10,7 +10,7 @@
 function luggage_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-news-body'
+  // Exported field_instance: 'node-news-body'.
   $field_instances['node-news-body'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -22,6 +22,15 @@ function luggage_news_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'frontpanel' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 0,
       ),
       'full' => array(
@@ -77,7 +86,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_category'
+  // Exported field_instance: 'node-news-field_category'.
   $field_instances['node-news-field_category'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -89,6 +98,12 @@ function luggage_news_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'full' => array(
@@ -113,9 +128,8 @@ function luggage_news_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 2,
       ),
     ),
@@ -135,7 +149,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_alternate_url'
+  // Exported field_instance: 'node-news-field_news_alternate_url'.
   $field_instances['node-news-field_news_alternate_url'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -148,6 +162,12 @@ function luggage_news_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 6,
+      ),
+      'frontpanel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -210,7 +230,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_files'
+  // Exported field_instance: 'node-news-field_news_files'.
   $field_instances['node-news-field_news_files'] = array(
     'bundle' => 'news',
     'deleted' => 0,
@@ -221,6 +241,12 @@ function luggage_news_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
+      ),
+      'frontpanel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -286,7 +312,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_images'
+  // Exported field_instance: 'node-news-field_news_images'.
   $field_instances['node-news-field_news_images'] = array(
     'bundle' => 'news',
     'deleted' => 0,
@@ -297,6 +323,12 @@ function luggage_news_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 4,
+      ),
+      'frontpanel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -370,7 +402,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_type'
+  // Exported field_instance: 'node-news-field_news_type'.
   $field_instances['node-news-field_news_type'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -382,6 +414,12 @@ function luggage_news_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'full' => array(
@@ -406,9 +444,8 @@ function luggage_news_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -428,7 +465,7 @@ function luggage_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_tags'
+  // Exported field_instance: 'node-news-field_tags'.
   $field_instances['node-news-field_tags'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -441,6 +478,12 @@ Baseball, bat, glove, ...',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'full' => array(
@@ -465,9 +508,8 @@ Baseball, bat, glove, ...',
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 3,
       ),
     ),
