@@ -104,7 +104,6 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['field_news_images']['table'] = 'field_data_field_news_images';
   $handler->display->display_options['fields']['field_news_images']['field'] = 'field_news_images';
   $handler->display->display_options['fields']['field_news_images']['label'] = '';
-  $handler->display->display_options['fields']['field_news_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_images']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
