@@ -13,6 +13,7 @@ function luggage_news_metatag_export_default() {
   // Exported Metatag config instance: node:news.
   $config['node:news'] = array(
     'instance' => 'node:news',
+    'disabled' => FALSE,
     'config' => array(
       'robots' => array(
         'value' => array(

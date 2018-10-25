@@ -104,12 +104,14 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['field_news_images']['table'] = 'field_data_field_news_images';
   $handler->display->display_options['fields']['field_news_images']['field'] = 'field_news_images';
   $handler->display->display_options['fields']['field_news_images']['label'] = '';
+  $handler->display->display_options['fields']['field_news_images']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_news_images']['alter']['path'] = '[field_news_alternate_url]';
   $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_images']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_images']['settings'] = array(
     'image_style' => 'medium',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   $handler->display->display_options['fields']['field_news_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
@@ -240,12 +242,14 @@ function luggage_news_views_default_views() {
   $handler->display->display_options['fields']['field_news_images']['table'] = 'field_data_field_news_images';
   $handler->display->display_options['fields']['field_news_images']['field'] = 'field_news_images';
   $handler->display->display_options['fields']['field_news_images']['label'] = '';
+  $handler->display->display_options['fields']['field_news_images']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_news_images']['alter']['path'] = '[field_news_alternate_url]';
   $handler->display->display_options['fields']['field_news_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_images']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_images']['settings'] = array(
     'image_style' => 'thumbnail',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   $handler->display->display_options['fields']['field_news_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
